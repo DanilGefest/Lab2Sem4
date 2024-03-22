@@ -13,14 +13,14 @@ import com.squareup.picasso.Picasso
 class CharacterAdapter(private val context: Context, private val List: Array<Character>): RecyclerView.Adapter<RecyclerView.ViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {                 // при создании определяем какой это вьюхзолдер и передает в него те элементы которыек долженл
        if (viewType == Image_type){
-           val view = LayoutInflater.from(context).inflate(R.layout.activity_main2, parent, false)
+           val view = LayoutInflater.from(context).inflate(R.layout.layout_1, parent, false)
        return ImageViewHolder(view)
        }
         if (viewType == Name_type){
-            val view = LayoutInflater.from(context).inflate(R.layout.activity_main3, parent, false)
+            val view = LayoutInflater.from(context).inflate(R.layout.layout_2, parent, false)
             return NameViewHolder(view)
         } else {
-            val view = LayoutInflater.from(context).inflate(R.layout.activity_main4, parent, false)
+            val view = LayoutInflater.from(context).inflate(R.layout.layout_3, parent, false)
             return SpeciesViewHolder(view)
         }
 
